@@ -41,7 +41,6 @@ with open('data.csv', 'w', encoding='UTF8', newline='') as f:
             print("Number of Critical cve: {}".format(numberOfCriticalCVE))
             print("CVSS: {}".format(cvssScore))
             print("Number of CVEs {}".format(numberOfCVEs))
-        print("this is the length of nameCVE: {}".format(len(nameCVE)))
         rows = [result['ip_str'], nameCVE, cvssScore, numberOfCVEs, numberOfHighCVE, numberOfCriticalCVE]
         writer.writerow(rows)
 
